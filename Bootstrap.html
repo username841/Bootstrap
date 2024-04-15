@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Foods</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #ffc107;
+    }
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .hero-section {
+      background-image: url('sweet food.webp');
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .btn-primary {
+      background-color: #ff5722;
+      border-color: #ff5722;
+    }
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .about-section {
+      padding: 100px 0;
+      background-color: #ffc107;
+      color: #fff;
+    }
+    .contact-section {
+      padding: 100px 0;
+      background-color: #ff5722;
+      color: #fff;
+    }
+    .footer-section {
+      background-color: #ffc107;
+      padding: 20px 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sweet Foods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to Sweet Foods</h1>
+      <a href="#" class="btn btn-primary">View Menu</a>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="container" style="padding: 40PX 0 0 0;">
+      <div class="row">
+        <!-- Menu Item 1 -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="sdd.jpg" class="card-img-top" alt="Dish 1">
+            <div class="card-body">
+              <h5 class="card-title">Sweet Delight</h5>
+              <p class="card-text">A delightful treat to satisfy your sweet cravings.</p>
+              <p class="card-text">$10.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item 2 -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="cd.jpg" class="card-img-top" alt="Dish 2" style="height: 240px;">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Dream</h5>
+              <p class="card-text">Indulge in this dreamy chocolate dessert.</p>
+              <p class="card-text">$12.99</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item 3 -->
+        <div class="col-md-4">
+          <div class="card menu-item">
+            <img src="BB.jpg" class="card-img-top" alt="Dish 3" style="height: 240px;">
+            <div class="card-body">
+              <h5 class="card-title">Berry Bliss</h5>
+              <p class="card-text">Experience the bliss with this berry-filled delight.</p>
+              <p class="card-text">$8.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="bi.jpg" alt="Restaurant Image" class="img-fluid" style="border-radius: 8%;" height="100px">
+        </div>
+        <div class="col-md-6">
+          <h2>About Sweet Foods</h2>
+          <p>At Sweet Foods, we specialize in crafting delicious desserts that will tantalize your taste buds. Our passion for sweets drives us to create the most delightful treats using only the finest ingredients. Come and indulge in the sweetness!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Sweet Foods</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <p>&copy; 2024 Sweet Foods. All rights reserved.</p>
+      <!-- Add your social media icons here -->
+      <img src="tw.png", alt="" style="height: 50px;">
+      <img src="igg-removebg-preview.png", alt="" style="height: 70px;">
+      <img src="fbb-removebg-preview.png" alt="" style="height: 50px;">
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
